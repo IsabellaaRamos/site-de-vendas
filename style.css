@@ -72,6 +72,19 @@ body * {
     margin: 8px;
 }
 
+
+/* SWITCH */
+
+#switch button {
+    width: 32px;
+    height: 32px;
+    background: white url(./assets/moon-stars.svg) no-repeat center;
+    border: 0;
+    border-radius: 50%;
+
+
+}
+
 ul {
     list-style: none;
 
