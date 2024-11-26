@@ -1,0 +1,151 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+   --text-color: white;
+   --bg-url: url(./assets/bg-mobile.jpg);
+   --stroke-color: rgba(255, 255, 255, 0.5);
+   --surface-color: rgba(255, 255, 255, 0.05);
+   --surface-color-hover: rgba(0, 0, 0, 0.02);
+   --highlight-color: rgba(255, 255, 255,  0.2);
+}
+
+.light {
+    --text-color: black;
+    --bg-url: url(./assets/bg-mobile-light.jpg);
+    --stroke-color: rgba(0, 0, 0, 0.5);
+    --surface-color: rgba(0, 0, 0, 0.05);
+    --surface-color-hover: rgba(0, 0, 0, 0.02);
+    --highlight-color: rgba(0, 0, 0, 0, 0.1);
+}
+
+body {
+
+
+   /*Arrumando a imagem*/
+   /*
+    background-image: url(./assets/bg-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: top center; /*Posição da imagem (top= Começa do topo)*/
+    background-size: cover; /* Cover: preenche toda a imagem  Container: preenche toda a largura e altura
+    
+    */
+
+ background: var(--bg-url) no-repeat top center / cover;
+   
+}
+
+body * {
+   font-family: 'inter', sans-serif;
+   color: var(--text-color);
+}
+
+#container {
+    width: 360px;
+   /* border: 1px solid red;*/
+    margin: auto; /*Mantem a imagem no centro*/
+    margin: 56px auto 0px;
+    padding: 0 24px;
+    
+}
+
+ /*ALINHAR ELEMNETOS */
+
+#profile {
+    text-align: center;
+}
+
+#profile img {
+    width: 112px;
+    
+}
+
+#profile p {
+    font-size: 500;
+    line-height: 24px;
+    margin: 8px;
+}
+
+ul {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    padding: 24px 0;
+ 
+   /* gap: 8px; GAP coloca espaço entre eles*/
+}
+
+ul li a {
+   
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+
+    padding: 16px 24px;
+
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    border-radius: 8px;
+
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+
+    text-decoration: none;
+    font-weight: 500;
+
+    transition: background 0.2s;
+}
+
+ul li a:hover {
+
+    background: var(--surface-color-hover);
+    border: 1.5px solid var(--text-color);
+}
+
+/* Social Icons*/
+
+#divicons {
+
+    display: flex; /*Para que cada elemto fique lado a lado*/
+    justify-content: center; /*Deixa os elementos no centro*/
+    /*gap: 32px; /*Espaço entre eles*/
+
+    padding: 24px 0; /*Espaço encima e embaixo e 0 nas laterais*/
+
+    font-size: 24px; /*Modifica o tamnho do icone*/
+
+}
+
+#divicons a {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+
+    transition: background 0.2s;
+    border-radius: 50%;
+
+}
+
+
+#divicons a:hover {
+
+    background: var(--highlight-color);
+}
+
+footer {
+    padding: 24px 0;
+    text-align: center;
+    font-size: 14px;
+
+}
+
+/*Terminar de arrumar o hover */
