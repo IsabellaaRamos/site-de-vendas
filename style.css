@@ -5,13 +5,14 @@
     box-sizing: border-box;
 }
 
-:root{
+:root {
    --text-color: white;
+
    --bg-url: url(./assets/bg-mobile.jpg);
    --stroke-color: rgba(255, 255, 255, 0.5);
-   --surface-color: rgba(255, 255, 255, 0.05);
+   --surface-color: rgba(255, 255, 255, 0.01);
    --surface-color-hover: rgba(0, 0, 0, 0.02);
-   --highlight-color: rgba(255, 255, 255,  0.2);
+   --light-color: rgba(255, 255, 255,  0.2);
 }
 
 .light {
@@ -20,7 +21,7 @@
     --stroke-color: rgba(0, 0, 0, 0.5);
     --surface-color: rgba(0, 0, 0, 0.05);
     --surface-color-hover: rgba(0, 0, 0, 0.02);
-    --highlight-color: rgba(0, 0, 0, 0, 0.1);
+    --light-color: rgba(0, 0, 0,  0.1);
 }
 
 body {
@@ -35,11 +36,12 @@ body {
     
     */
 
- background: var(--bg-url) no-repeat top center / cover;
+    background: var(--bg-url) no-repeat top center / cover;
    
 }
 
 body * {
+
    font-family: 'inter', sans-serif;
    color: var(--text-color);
 }
@@ -135,11 +137,11 @@ ul li a:hover {
 
 }
 
-
 #divicons a:hover {
 
-    background: var(--highlight-color);
+    background: var(--light-color);
 }
+
 
 footer {
     padding: 24px 0;
